@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sirikanya Ekkasat | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">Sirikanya</a>
+  <ul class="nav-links">
+    <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <a href="experience.html">Experience</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Cybersecurity · GRC · Robotics & AI</p>
+    <h1 class="hero-name">Sirikanya<br>Ekkasat</h1>
+    <p class="hero-bio">
+      Cybersecurity professional with hands-on experience in GRC, ITGC testing, and penetration testing.
+      Background in Robotics & AI Engineering (KMITL) with a passion for building secure, intelligent systems.
+      Currently pursuing M.Sc. in Cybersecurity at Mahidol University.
+    </p>
+    <div class="hero-btns">
+      <a href="projects.html" class="btn btn-primary">View Projects</a>
+      <a href="experience.html" class="btn btn-ghost">Experience</a>
+      <a href="#" class="btn btn-ghost">Download CV</a>
+    </div>
+    <div class="hero-meta">
+      <span>📍 Bangkok, Thailand</span>
+      <span>✉️ sirikanya.ek@gmail.com</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <!-- To add your photo: replace the div below with <img src="photo.jpg" class="hero-photo" alt="Sirikanya Ekkasat"> -->
+    <div class="hero-photo-placeholder">
+      <div class="placeholder-circle">🙂</div>
+      <span class="placeholder-label">Your Photo Here</span>
+    </div>
+  </div>
+</section>
+
+<!-- SNAPSHOT -->
+<section id="snapshot">
+  <div class="reveal">
+    <p class="section-label">Quick Snapshot</p>
+    <h2 class="section-title">What I Do</h2>
+  </div>
+  <div class="snapshot-grid reveal">
+    <div class="snapshot-card">
+      <div class="snapshot-icon">📋</div>
+      <h3>GRC & Compliance</h3>
+      <p>ITGC testing, SOX engagements, PDPA compliance reviews, and risk assessment — with real-world experience at EY Thailand's Digital Risk team.</p>
+    </div>
+    <div class="snapshot-card">
+      <div class="snapshot-icon">🔐</div>
+      <h3>Penetration Testing</h3>
+      <p>Vulnerability assessments, CTF challenges, Vulnhub and TryHackMe labs using Metasploit, Nmap, Burp Suite, Wireshark, and John the Ripper.</p>
+    </div>
+    <div class="snapshot-card">
+      <div class="snapshot-icon">🤖</div>
+      <h3>Robotics & AI</h3>
+      <p>ROS (Turtlebot3), OpenCV, computer vision, gesture-hand control, and ML model development — from hardware to software integration.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section id="featured">
+  <div class="reveal">
+    <p class="section-label">Featured Work</p>
+    <h2 class="section-title">Recent Projects</h2>
+  </div>
+  <div class="featured-grid reveal">
+    <a href="projects.html" class="featured-card featured-large">
+      <div class="featured-num">01</div>
+      <div class="featured-info">
+        <h3>VulnaChat — Automated Vulnerability Assessment Chatbot</h3>
+        <p>A web-based chatbot integrating NVD, CVE, and FIRST.org databases via a RAG pipeline and CVSS scoring service — replacing slow manual vulnerability lookups with an intelligent conversational interface.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">RAG</span><span class="tag">CVE/NVD</span><span class="tag">CVSS</span>
+        </div>
+      </div>
+      <span class="featured-arrow">→</span>
+    </a>
+    <a href="projects.html" class="featured-card">
+      <div class="featured-num">02</div>
+      <div class="featured-info">
+        <h3>EternalBlue Exploitation — TryHackMe</h3>
+        <p>Full pentest lab exploiting MS17-010 with Metasploit, process migration, hashdump, and password cracking.</p>
+        <div class="project-tags"><span class="tag">Kali Linux</span><span class="tag">Metasploit</span></div>
+      </div>
+      <span class="featured-arrow">→</span>
+    </a>
+    <a href="projects.html" class="featured-card">
+      <div class="featured-num">03</div>
+      <div class="featured-info">
+        <h3>Basic Pentesting — Vulnhub</h3>
+        <p>Full pentest from network discovery to root access via FTP backdoor, WPScan, and hash cracking.</p>
+        <div class="project-tags"><span class="tag">Vulnhub</span><span class="tag">Pentest</span></div>
+      </div>
+      <span class="featured-arrow">→</span>
+    </a>
+  </div>
+  <div class="reveal" style="margin-top:2.5rem;">
+    <a href="projects.html" class="btn btn-ghost">See All Projects →</a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills-strip">
+  <div class="reveal">
+    <p class="section-label">Skills</p>
+    <h2 class="section-title">Toolkit</h2>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-group">
+      <h3 class="skill-group-title">Governance & Risk</h3>
+      <ul class="skill-list">
+        <li>ITGC Testing</li>
+        <li>SOX Control Testing</li>
+        <li>Risk Assessment</li>
+        <li>IT Asset Review</li>
+        <li>PDPA Compliance</li>
+        <li>ISO 8000</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3 class="skill-group-title">Security & Pentest</h3>
+      <ul class="skill-list">
+        <li>Penetration Testing</li>
+        <li>Vulnerability Assessment</li>
+        <li>Metasploit / Nmap</li>
+        <li>Burp Suite / Wireshark</li>
+        <li>WPScan / Nikto</li>
+        <li>CTF (Web / Forensics / Crypto)</li>
+      </ul>
+    </div>
+    <div class="skill-group">
+      <h3 class="skill-group-title">AI, Robotics & Dev</h3>
+      <ul class="skill-list">
+        <li>Python</li>
+        <li>Machine Learning (scikit-learn)</li>
+        <li>OpenCV / Computer Vision</li>
+        <li>ROS (Turtlebot3)</li>
+        <li>Arduino</li>
+        <li>3D Design (Fusion 360, Inventor)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="reveal">
+    <p class="section-label">Background</p>
+    <h2 class="section-title">Education</h2>
+  </div>
+  <div class="edu-grid reveal">
+    <div class="edu-card">
+      <h3 class="edu-degree">M.Sc. Cybersecurity and Information Assurance</h3>
+      <p class="edu-school">Mahidol University · Faculty of ICT</p>
+      <p class="edu-detail">Network Security · Threat Intelligence · Security Operations · Secure Software Development</p>
+    </div>
+    <div class="edu-card">
+      <h3 class="edu-degree">B.Eng. Robotics and AI Engineering (International Program)</h3>
+      <p class="edu-school">KMITL · King Mongkut's Institute of Technology Ladkrabang</p>
+      <p class="edu-detail">GPA 3.33 · Second Class Honors</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sirikanya Ekkasat · <a href="contact.html" style="color:inherit;opacity:.6;">Get in touch</a></p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
